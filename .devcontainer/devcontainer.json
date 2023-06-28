@@ -1,0 +1,10 @@
+{
+	"name": "Cuda_12.1",
+	"build": { 
+		"context": "..",
+		"dockerfile": "Dockerfile"
+	},
+	"runArgs": ["--gpus", "all"],
+	"remoteUser": "root",
+	"postCreateCommand": "ln -s /workspaces/Segment-Any-Anomaly/data/mvtec_anomaly_detection /workspaces/datasets && pip install -e /workspaces/Segment-Any-Anomaly/GroundingDINO && pip install -e /workspaces/Segment-Any-Anomaly/SAM"
+}

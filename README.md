@@ -1,4 +1,18 @@
 # Segment Any Anomaly
+
+This is just a fork for using devcontainers with this repo.
+## Usage
+Open repo in VSCode and "Rebuild and Reopen in Container".
+
+Only needed once:
+
+- Download datasets (tested with MVTec) and place them into ./data!
+The reasoning is that you wont need to download massive files each time you spin up a new container.
+
+- Open the ./install.sh and change your ProjectRoot to your projects root, it should be something like: /workspaces/Segment-Any-Anomaly (if you opened the folder in the container). Then execute the ./install.sh which will download some models and places them in the ./weights folder.
+
+### Old Readme here:
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12Sh0j92YYmTa0oIuSEWWpPBCpIwCSVhz?usp=sharing)
 [![HuggingFace Space](https://img.shields.io/badge/🤗-HuggingFace%20Space-cyan.svg)](https://huggingface.co/spaces/Caoyunkang/Segment-Any-Anomaly)
 
